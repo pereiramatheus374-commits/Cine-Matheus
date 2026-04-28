@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineMatheus – Meu Site de Cinema</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">🎬 CineMatheus</a>
+    <div class="busca-wrapper">
+      <input type="text" id="busca" placeholder="🔍 Buscar filme..." oninput="filtrarFilmes()" />
+    </div>
+    <nav>
+      <a href="index.html" class="ativo">Início</a>
+      <a href="contato.html">Contato</a>
+      <span class="badge-favs">❤️ <span id="num-favs">0</span></span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Meus Filmes Favoritos</h1>
+      <p>Uma seleção especial dos melhores filmes de todos os tempos.</p>
+      <div class="hero-stats">
+        <span>🎬 10 Filmes</span>
+        <span>⭐ Curadoria Pessoal</span>
+        <span>🍿 100% Recomendados</span>
+      </div>
+    </section>
+
+    <section class="filtros" id="filtros">
+      <!-- Gerado pelo JavaScript -->
+    </section>
+
+    <section class="vitrine" id="vitrine">
+      <!-- Cards gerados pelo JavaScript -->
+    </section>
+
+    <div id="sem-resultados" class="sem-resultados hidden">
+      <span>😔</span>
+      <p>Nenhum filme encontrado.<br />Tente outro termo de busca!</p>
+    </div>
+  </main>
+
+  <!-- Modal de detalhes -->
+  <div id="modal" class="modal hidden" onclick="fecharModalFundo(event)">
+    <div class="modal-conteudo">
+      <button class="modal-fechar" onclick="fecharModal()">✕</button>
+      <div id="modal-corpo"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 CineMatheus &middot; Feito com ❤️ e muito pipoca 🍿</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato – CineMatheus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">🎬 CineMatheus</a>
+    <div class="busca-wrapper" style="visibility:hidden"></div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="contato.html" class="ativo">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Entre em Contato</h1>
+      <p>Tem uma indicação de filme ou quer trocar uma ideia? Me manda uma mensagem!</p>
+    </section>
+
+    <section class="contato-section">
+      <form id="form-contato" class="form-contato" onsubmit="enviarFormulario(event)">
+
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="Nova mensagem – CineMatheus 🎬" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        </div>
+
+        <div class="campo">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto">
+            <option value="indicacao">🎬 Indicação de filme</option>
+            <option value="parceria">🤝 Parceria</option>
+            <option value="elogio">⭐ Elogio</option>
+            <option value="outro">💬 Outro</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar Mensagem 🚀</button>
+
+        <div id="msg-sucesso" class="msg-sucesso hidden">
+          ✅ Mensagem enviada com sucesso! Obrigado pelo contato, em breve te respondo.
+        </div>
+
+      </form>
+
+      <div class="contato-info">
+        <h3>📌 Informações</h3>
+        <p>🎬 Este é um projeto pessoal de cinema criado com HTML, CSS e JavaScript.</p>
+        <p>📧 Responderei em até 48 horas.</p>
+        <div class="redes">
+          <span>🌐 Redes sociais</span>
+          <a href="#" class="rede-link">GitHub</a>
+          <a href="#" class="rede-link">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 CineMatheus &middot; Feito com ❤️ e muito pipoca 🍿</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
