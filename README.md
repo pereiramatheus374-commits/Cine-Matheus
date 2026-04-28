@@ -1,5 +1,8 @@
 # 🎬 CineMatheus
 
+**Site ao vivo:** [pereiramatheus374-commits.github.io/Cine-Matheus](https://pereiramatheus374-commits.github.io/Cine-Matheus/)
+**Repositório:** [github.com/pereiramatheus374-commits/Cine-Matheus](https://github.com/pereiramatheus374-commits/Cine-Matheus)
+
 Site pessoal de curadoria de cinema — uma vitrine dos 10 filmes favoritos de Matheus, com busca, filtros por gênero, favoritos e formulário de contato.
 
 ## Funcionalidades
